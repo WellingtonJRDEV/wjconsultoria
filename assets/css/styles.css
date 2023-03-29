@@ -1,0 +1,146 @@
+/* Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #ccc;
+	font-family: Helvetica, sans-serif;
+}
+
+.position-relative{
+	margin: 10px;
+}
+
+/* Main content */
+
+#img-main{
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+#sobre{
+	padding: 25px;
+}
+
+#contato{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* animations */
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -3000px, 0);
+  transform: translate3d(0, -3000px, 0);
+  }
+  
+  60% {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 25px, 0);
+  transform: translate3d(0, 25px, 0);
+  }
+  
+  75% {
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  }
+  
+  90% {
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+  }
+  
+  100% {
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  
+  @keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -3000px, 0);
+  transform: translate3d(0, -3000px, 0);
+  }
+  
+  60% {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 25px, 0);
+  transform: translate3d(0, 25px, 0);
+  }
+  
+  75% {
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  }
+  
+  90% {
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+  }
+  
+  100% {
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+/* darkmode */
+
+body.dark-mode{
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode button {
+  background-color: #222;
+  color: #fff;
+}
+
+/* media query */
+
+@media(max-width: 600px) {
+	#img-main{
+		width: 200px;
+		height: 200px;
+	}
+
+	.card{
+		width: 18rem;
+		font-size: 1em;
+	}
+
+	.card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
